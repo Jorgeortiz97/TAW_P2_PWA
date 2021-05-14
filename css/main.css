@@ -82,6 +82,28 @@ body {
 	text-transform: uppercase;
 }
 
+.features .img-wrapper {
+	display:inline-block;
+	position:relative;
+}
+
+.features .img-wrapper .btn {
+	background-color: transparent;
+	border: 2px solid green;
+	color: green;
+	margin-top: 20px;
+	position:absolute;
+	right:2%;
+	top:-4%;
+}
+
+.features .btn:hover {
+	background-color: green;
+	color: white;
+	border: 2px solid black;
+}
+
+
 .features img {
 	-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);

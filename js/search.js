@@ -74,9 +74,13 @@ function selectIndex() {
 }
 
 window.onload = function() {
+    if ('serviceWorker' in navigator)
+        navigator.serviceWorker.register('service-worker.js');
+
     $(".datepicker").datepicker({
         dateFormat: 'yy-mm-dd',
     });
+
     document.getElementById("searchBtn").onclick = search;
     document.getElementById("saveSearchBtn").onclick = saveSearch;
     document.getElementById("saveSearchNameBtn").onclick = saveSearchName;

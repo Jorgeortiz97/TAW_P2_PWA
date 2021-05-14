@@ -35,6 +35,9 @@ function goSearch(url) {
 }
 
 window.onload = function() {
+    if ('serviceWorker' in navigator)
+        navigator.serviceWorker.register('service-worker.js');
+
     localLoad();
     document.getElementById("deleteLocalStorageBtn").onclick = deleteLocalStorage;
 

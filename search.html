@@ -7,10 +7,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Vendor suggestions -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="blue">
+    <link rel="apple-touch-icon" href="images/logo.png">
+
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="jquery-ui/css/jquery-ui-1.12.1.min.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -23,9 +32,12 @@
 
         <a href="#" class="nav-link">Space News Portal</a>
 
+        <i id="wifiNotification" class="fa fa-wifi text-danger mx-1" style="display: none;"></i>
+        <i id="batteryNotification" style="display: none;"></i>
+
         <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
 				<span class="navbar-toggler-icon"></span>
-			</button>
+        </button>
         <div class="collapse navbar-collapse" id="main-navigation">
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -178,7 +190,7 @@
     <script src="bootstrap/jquery-3.5.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="jquery-ui/js/jquery-ui-1.12.1.min.js"></script>
-    <script src="js/load-articles.js"></script>
+    <script src="js/common.js"></script>
     <script src="js/search.js"></script>
 </body>
 
